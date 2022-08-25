@@ -170,6 +170,18 @@ android_app_import {
 }
 
 android_app_import {
+	name: "OplusAppPlatform",
+	owner: "oneplus",
+	apk: "proprietary/system_ext/priv-app/OplusAppPlatform/OplusAppPlatform.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
+}
+
+android_app_import {
 	name: "WfdService",
 	owner: "oneplus",
 	apk: "proprietary/system_ext/priv-app/WfdService/WfdService.apk",
@@ -240,6 +252,13 @@ dex_import {
 	owner: "oneplus",
 	jars: ["proprietary/product/framework/com.android.hotwordenrollment.common.util.jar"],
 	product_specific: true,
+}
+
+dex_import {
+	name: "com.oplus.camera.unit.sdk",
+	owner: "oneplus",
+	jars: ["proprietary/system_ext/framework/com.oplus.camera.unit.sdk.jar"],
+	system_ext_specific: true,
 }
 
 dex_import {
