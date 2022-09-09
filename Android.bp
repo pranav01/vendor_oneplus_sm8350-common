@@ -161,6 +161,7 @@ android_app_import {
 	name: "DaxUI",
 	owner: "oneplus",
 	apk: "proprietary/system_ext/priv-app/DaxUI/DaxUI.apk",
+	overrides: ["AudioFX", "MusicFX", "SoundAmplifierPrebuilt"],
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
